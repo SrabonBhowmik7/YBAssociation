@@ -26,7 +26,7 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="work.html">Work</a>
+            <a href="work.html">Music</a>
           </li>
           <li>
             <a href="Merch.html">Merch</a>
@@ -38,15 +38,15 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="work.html">Work </a>
+          <a href="work.html">Music </a>
         </li>
         <li>
           <a href="Merch.html">Merch</a>
         </li>
       </ul>
     </nav>
-    <h1 class="center">YBAssociation</h1>
-    <h4 class="center">864</h4>
+    <!-- <h1 class="center">YBAssociation</h1>
+    <h4 class="center">864</h4> -->
   </header>
 
   <!-- <section class="slider">
@@ -212,12 +212,13 @@
  
   
   <!-- Row 4 -->
-  <!-- <div class="row row-4">
+  <div class="row row-4">
     <div class="col m6">
       <div class="card">
         <div class="card-image">
-          <img src="img/gallery/abstract6.jpg" alt="">
-          <span class="card-title"><b> The Cannabis Kid </b></span>
+          <img src="img/gallery/m2.jpg" alt="">
+          <span class="card-title"><b> YBA B-Ball Jerseys
+          </b></span>
           <a href="#abstract4" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
             <i class="material-icons">add</i>
           </a>
@@ -235,12 +236,46 @@
     </div>
     <div class="col m6 hide-on-small-only">
       <div class="img-content">
-        <h3>The Cannabis Kid</h3>
+        <h3>YBA B-Ball Jerseys
+        </h3>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est similique aut officia unde ratione a impedit sunt numquam
         ea?
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <!-- Row 5 -->
+  <div class="row row-5">
+    <div class="col m6 hide-on-small-only">
+      <div class="img-content">
+        <h3>YBA B-Ball Jerseys
+        </h3>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est similique aut officia unde ratione a impedit sunt numquam
+        ea?
+      </div>
+    </div>
+    <div class="col m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/gallery/M1.jpg" alt="">
+          <span class="card-title"><b> YBA B-Ball Jerseys
+          </b></span>
+          <a href="#abstract5" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 </section>
@@ -336,10 +371,11 @@
     </div>
   </div>
 <!-- Model 4 -->
-  <!-- <div id="abstract4" class="modal">
+  <div id="abstract4" class="modal">
     <div class="modal-content">
-      <h4>The Cannabis Kid</h4>
-      <img src="img/gallery/abstract6a.jpg" alt="" class="responsive-img"> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti animi laboriosam, quisquam minus recusandae
+      <h4>YBA B-Ball Jerseys
+      </h4>
+      <img src="img/gallery/m2.jpg" alt="" class="responsive-img"> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti animi laboriosam, quisquam minus recusandae
       saepe delectus maxime a reiciendis!
     </div>
     <div class="modal-footer">
@@ -351,7 +387,26 @@
         <i class="material-icons">star</i>
       </p>
     </div>
-  </div> -->
+  </div>
+
+  <!-- Model 5 -->
+  <div id="abstract5" class="modal">
+    <div class="modal-content">
+      <h4>YBA B-Ball Jerseys
+      </h4>
+      <img src="img/gallery/M1.jpg" alt="" class="responsive-img"> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti animi laboriosam, quisquam minus recusandae
+      saepe delectus maxime a reiciendis!
+    </div>
+    <div class="modal-footer">
+      <p>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+      </p>
+    </div>
+  </div>
  
 
   <!-- bottom new -->
@@ -422,6 +477,11 @@
         },
         {
           selector: '.row-4', offset: 500, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-5', offset: 600, callback: function (el) {
             Materialize.fadeInImage($(el));
           }
         }
